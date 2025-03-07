@@ -16,8 +16,7 @@ public:
 
     }
     void deposit(double dep) {
-        cout << "Enter amount to Deposit: ";
-        cin >> dep;
+
         balance = balance + dep;
         cout << "Deposit was successful! Current Balance: $" << balance << endl;
 
@@ -28,6 +27,7 @@ public:
             cout << "Insufficint funds!" << endl;
         }
         balance = balance - with;
+        cout << "New Balance: $" << balance;
 
     }
 
